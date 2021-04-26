@@ -17,7 +17,7 @@ const AddProductForm = (props) => {
       <div className="input-group mb-2">
         <input
           id="product"
-          class="form-control"
+          className="form-control"
           aria-label="Ajouter sur la liste"
           required
         />
