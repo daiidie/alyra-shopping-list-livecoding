@@ -1,6 +1,4 @@
 import Product from "./Product"
-
-import { useState } from "react"
 const ShoppingList = (props) => {
   const { shopping, removeFromShoppingList, filter, setFilter } = props
 
