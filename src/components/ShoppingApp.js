@@ -5,9 +5,10 @@ import AddPopularProduct from "./AddPopularProduct"
 
 const ShoppingApp = () => {
   const [shopping, setShopping] = useState(["curry", "cumin", "café"])
-
+  const [filter, setFilter] = useState("")
   const addToShoppingList = (product) => {
     setShopping([...shopping, product])
+    setFilter("")
   }
 
   const removeFromShoppingList = (product) => {
@@ -20,6 +21,8 @@ const ShoppingApp = () => {
         <ShoppingList
           shopping={shopping}
           removeFromShoppingList={removeFromShoppingList}
+          filter={filter}
+          setFilter={setFilter}
         />
       </section>
       <section className="col-lg-4">
